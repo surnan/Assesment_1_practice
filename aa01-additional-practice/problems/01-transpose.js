@@ -42,7 +42,19 @@ console.log(transpose(arr1));
 console.log(transpose(arr2));
 
 function transpose(arr) {
-    // Your code here
+    let width = arr[0].length;
+    let height= arr.length;
+
+    let answer = [];
+    for (let i=0; i<width; i++){
+        let newArray=[];
+        for (let j=0; j<height; j++){
+            newArray.push(arr[j][i]);
+        }
+        answer.push(newArray);
+    }
+    // console.log(answer);
+    return answer;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
