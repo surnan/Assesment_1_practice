@@ -18,9 +18,21 @@
     console.log(mySlice([1, 2, 3], 0)) // prints [1, 2, 3]
     console.log(mySlice([1, 2, 3], 1)) // prints [2, 3];
 */
+// [ FIRST_index, SECOND_index >
+// FIRST  < 0, then slice from 0
+// SECOND > arr.length, then slice till arr.length
+// SECOND = --blank--, then slice till arr.length
+console.log(mySlice([1, 2, 3], 0, 2)) // prints [1, 2]
+// console.log(mySlice([1, 2, 3], 0, 4)) // prints [1, 2, 3]
+// console.log(mySlice([1, 2, 3], -1, 2)) // prints [1, 2]
+// console.log(mySlice([1, 2, 3], 1, 0)) // prints []
+// console.log(mySlice([1, 2, 3], 0)) // prints [1, 2, 3]
+// console.log(mySlice([1, 2, 3], 1)) // prints [2, 3];
 
 function mySlice(arr, start, end = arr.length) {
-    // Your code here 
+    // Your code here
+
+
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
