@@ -23,16 +23,28 @@
 // SECOND > arr.length, then slice till arr.length
 // SECOND = --blank--, then slice till arr.length
 console.log(mySlice([1, 2, 3], 0, 2)) // prints [1, 2]
-// console.log(mySlice([1, 2, 3], 0, 4)) // prints [1, 2, 3]
-// console.log(mySlice([1, 2, 3], -1, 2)) // prints [1, 2]
-// console.log(mySlice([1, 2, 3], 1, 0)) // prints []
-// console.log(mySlice([1, 2, 3], 0)) // prints [1, 2, 3]
-// console.log(mySlice([1, 2, 3], 1)) // prints [2, 3];
+console.log(mySlice([1, 2, 3], 0, 4)) // prints [1, 2, 3]
+console.log(mySlice([1, 2, 3], -1, 2)) // prints [1, 2]
+console.log(mySlice([1, 2, 3], 1, 0)) // prints []
+console.log(mySlice([1, 2, 3], 0)) // prints [1, 2, 3]
+console.log(mySlice([1, 2, 3], 1)) // prints [2, 3];
 
 function mySlice(arr, start, end = arr.length) {
-    // Your code here
 
+    const myStart = (start < 0)         ? 0: start;
+    const myEnd   = (end > arr.length)  ? arr.length: end;
 
+    let answer = [];
+
+    for (i = myStart; i < myEnd; i++){
+        answer.push(arr[i]);
+    }
+
+    // console.log('arr, start, end: ', arr, start, end);
+    // console.log('myStart, myEnd: ', myStart, myEnd);
+    // console.log('answer == ', answer)
+    // console.log('--------------------');
+    return answer;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
