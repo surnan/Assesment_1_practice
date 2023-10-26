@@ -14,8 +14,16 @@
 
 */
 
+console.log(validHexCode("#ABCDEF")); // prints true;
+// console.log(validHexCode("#88ef29")); // prints true;
+// console.log(validHexCode("943234")); // prints false;
+// console.log(validHexCode("#222!E4")); // prints false;
+// console.log(validHexCode("#22222")); // prints false;
+
 function validHexCode(string) {
-    // Your code here 
+    // Your code here
+
+    return('---');
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
