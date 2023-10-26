@@ -28,9 +28,21 @@
                                              ]
 
 */
+let arr1 = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+   ]
+let arr2 = [
+    [1, 2],
+    [3, 4],
+    [5, 6],
+   ]
+console.log(transpose(arr1));
+console.log(transpose(arr2));
 
 function transpose(arr) {
-    // Your code here 
+    // Your code here
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
