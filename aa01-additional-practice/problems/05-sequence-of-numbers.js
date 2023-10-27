@@ -5,7 +5,7 @@
     Given a string of numbers,
     translate the string into a sequence of numbers that describes the count of
     identical digits.
-    
+
     For example, the string "1" has "one 1" and would be
     translated to 11.
     The string "11" is interpreted as "two 1s" which is
@@ -20,8 +20,30 @@
     console.log(sequenceOfNumbers("1211")) // prints 111221;
 */
 
+console.log(sequenceOfNumbers("1")) // prints 11;
+console.log(sequenceOfNumbers("11")) // prints 21;
+console.log(sequenceOfNumbers("1211")) // prints 111221;
+
+
+
 function sequenceOfNumbers(string) {
-    // Your code here 
+console.log("\n\n",string);
+    let answer      = '';
+    let count       = 0;            //only time count will ever equal 0
+    let prevChar = string[0];
+
+    for (const char of string){
+        if (char === prevChar){
+            count++;
+            continue;
+        }
+        answer += `${count}${prevChar}`;
+        count = 1;
+        prevChar = char;
+    }
+    answer += `${count}${prevChar}`;
+    console.log('answer = ', answer);
+    return answer;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
